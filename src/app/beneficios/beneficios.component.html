@@ -1,0 +1,148 @@
+
+
+
+<div class="top-buffer"></div>
+
+<!-- Menu -->
+<nav class="navbar navbar-expand-md navbar-dark bg-light sub-navbar navbar-fixed-top">
+  <div class="container">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#subNavBarDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand sub-navbar" [routerLink]="['/user/bob']">prevencion y <br />readaptacion social</a>
+
+    <div class="collapse navbar-collapse" id="subNavBarDropdown">
+      <ul class="navbar-nav">
+
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Generales']">Generales</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" routerLink="/Demografico">Demograficos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Biometricos']">Biometricos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Familiares']">Familiares</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Judiricos']">Judiricos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Oficios']">Oficios</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/']">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Fin del Menu -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/Home']"><i class="icon icon-home"></i></a></li>
+        <li class="breadcrumb-item"><a [routerLink]="['/Generales']">Generales</a></li>
+        <li class="breadcrumb-item"><a [routerLink]="['/Demografico']">Demografico</a></li>
+        <li class="breadcrumb-item"><a [routerLink]="['/Biometricos']">Biometrico</a></li>
+        <li class="breadcrumb-item"><a [routerLink]="['/Familiares']">Familiares</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a [routerLink]="['/Judiricos']">Judiricos</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a [routerLink]="['/Beneficio']">Beneficiarios</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+
+<!-- Posicionamiento -->
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3><span class="icon-user" aria-hidden="true"></span>&nbsp;Judiricos</h3>
+      <hr class="red">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h4 style="color:rgb(188,149,92,1);"><span aria-hidden="true"></span>&nbsp;Beneficios</h4>
+      <hr>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <form role="form">
+        <p>
+          <strong>Penas Cortas ( hasta 4 años 11 meses)</strong>
+        </p>
+        <div class="radio">
+          <label>
+            <input checked="" name="radio-01" type="radio" value="opcion-01"  [routerLink]="['/LibertadCondicionada']">Libertad Condicionada
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="radio-01" type="radio" value="opcion-02"  [routerLink]="['/JornadasDeTrabajo']" >Jornadas de Trabajo
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="radio-01" type="radio" value="opcion-03"  [routerLink]="['/TratamientoEnLibertad']">Tratamiento en Libertad
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="radio-01" type="radio" value="opcion-03" [routerLink]="['/TratamientosEnSemilibertad']">Tratamiento en Semilibertad
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="radio-01" type="radio" value="opcion-03" [routerLink]="['/CondenaCondenacional']">Condena Condicionada
+          </label>
+        </div>
+      
+        
+        <p>
+          <strong>Libertad anticipada</strong>
+        </p>
+        <div class="radio">
+          <label>
+            <input checked="" name="radio-01" type="radio" value="opcion-01"  [routerLink]="['/LibertadPreparatoria']">Libertad Preparatoria
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="radio-01" type="radio" value="opcion-02"  [routerLink]="['/RemisionParcialDeLaPena']">Remisión Parcial de la Pena
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="radio-01" type="radio" value="opcion-03"  [routerLink]="['/TratamientoPreLiberacional']">Tratamiento Pre-Liberacional
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="radio-01" type="radio" value="opcion-03"  [routerLink]="['/Art75Confinamiento']">Art. 75 (Confinamiento)
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input name="radio-01" type="radio" value="opcion-03" LibertadSupervisada [routerLink]="['/LibertadSupervisada']">Libertad Supervisada
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="bottom-buffer"></div>

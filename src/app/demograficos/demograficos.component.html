@@ -1,0 +1,208 @@
+
+<div class="top-buffer"></div>
+<router-outlet></router-outlet>
+<!-- Menu -->
+<nav class="navbar navbar-expand-md navbar-dark bg-light sub-navbar navbar-fixed-top">
+  <div class="container">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#subNavBarDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand sub-navbar" [routerLink]="['/user/bob']">prevencion y <br />readaptacion social</a>
+
+    <div class="collapse navbar-collapse" id="subNavBarDropdown">
+      <ul class="navbar-nav">
+
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Generales']">Generales</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" routerLink="/Demografico']">Demograficos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Biometricos']">Biometricos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Familiares']">Familiares</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Judiricos']">Judiricos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Oficios']">Oficios</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/']">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Fin del Menu -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/Home']"><i class="icon icon-home"></i></a></li>
+        <li class="breadcrumb-item"><a [routerLink]="['/Generales']">Generales</a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a [routerLink]="['/Demografico']">Demografico</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<!-- Posicionamiento -->
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3><span class="icon-user" aria-hidden="true"></span>&nbsp;DEMOGRAFICOS</h3>
+      <hr class="red">
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row small-bottom-buffer">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="control-label">País*:<samp id="Calle" name="errUsernameAs" class="control-label"></samp> </label>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <small id="Calle" name="errCalle" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">Estado*:<samp id="No. Exterior/Interior" name="No. Exterior/Interior" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <small id="No. Exterior/Interior" name="No. Exterior/Interior" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">Municipio/Estado:*</label>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <small id="errpColonia" name="errpColonia" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row small-bottom-buffer">
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">Colonia:*</label>
+        <input type="text" class="form-control smalltext" id="Colonia" name="sAColonia" size="30" placeholder="Colonia">
+        <small id="errpColonia" name="errpColonia" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="control-label">Codigo Postal*:<samp id="Codigo Postal" name="errUsernameAs" class="control-label"></samp> </label>
+        <input type="text" class="form-control smalltext" id="Codigo Postal" name="Username" size="30" placeholder="Codigo Postal" onKeyPress="return CamposFormulario(event, 1);" value="">
+        <small id="Codigo Postal" name="Codigo Postal" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="control-label">Calle*:<samp id="Calle" name="errUsernameAs" class="control-label"></samp> </label>
+        <input type="text" class="form-control smalltext" id="Calle" name="Username" size="30" placeholder="Calle" onKeyPress="return CamposFormulario(event, 1);" value="">
+        <small id="Calle" name="errCalle" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row small-bottom-buffer">
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">No. Exterior/Interior*:<samp id="No. Exterior/Interior" name="No. Exterior/Interior" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+        <input type="text" class="form-control smalltext" id="pApellido" name="No. Exterior/Interior" size="30" placeholder="No. Exterior/Interior" onKeyPress="return CamposFormulario(event, 2);">
+        <small id="No. Exterior/Interior" name="No. Exterior/Interior" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">Nacionalidad*:<samp id="Nacionalidad" name="Nacionalidad" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+        <input type="text" class="form-control smalltext" id="pANacionalidad" name="Nacionalidad" size="30" placeholder="Nacionalidad" onKeyPress="return CamposFormulario(event, 2);">
+        <small id="Nacionalidad" name="Nacionalidad" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="row small-bottom-buffer">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="control-label">Télefono Móvil*:<samp id="Movil" name="errMovil" class="control-label"></samp> </label>
+        <input type="text" class="form-control smalltext" id="Movil" name="Movil" size="30" placeholder="Codigo Postal" onKeyPress="return CamposFormulario(event, 1);" value="">
+        <small id="Movil" name="Movil" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">Teléfono Casa:<samp id="Telefono Casa" name="Teléfono Casa" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+        <input type="text" class="form-control smalltext" id="pATeléfono Casa" name="Teléfono Casa" size="30" placeholder="Teléfono Casa" onKeyPress="return CamposFormulario(event, 2);">
+        <small id="Telefono Casa" name="Telefono Casa" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row small-bottom-buffer">
+    <div class="col-md-4">
+      <div class="form-group">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d30106.515566794485!2d-99.1281158!3d19.39881515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2smx!4v1634836948611!5m2!1ses!2smx" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row small-bottom-buffer">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="control-label">Latitud:<samp id="Latitud" name="Latitud" class="control-label"></samp> </label>
+        <input type="text" class="form-control smalltext" id="Latitud" name="Latitud" size="30" placeholder="Latitud" onKeyPress="return CamposFormulario(event, 1);" value="" aria-label="Disabled input example" disabled>
+        <small id="Latitud" name="Latitud" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">Longitud:<samp id="Longitud" name="Longitud" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+        <input type="text" class="form-control smalltext" id="Longitud" name="Longitud" size="30" placeholder="Longitud" onKeyPress="return CamposFormulario(event, 2);" disabled>
+        <small id="Longitud" name="Longitud" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+  </div>
+</div>
