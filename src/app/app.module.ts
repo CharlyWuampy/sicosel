@@ -83,6 +83,7 @@ const routes: Routes = [
   { path: 'PsicologiaB', component: PsicologiaBComponent },
   { path: 'Capacitacion', component: CapacitacionComponent },
   { path: 'Empleo', component: EmpleoComponent },
+  { path: 'Consultas', component: ConsultasComponent },
   { path: '', component: SICOSELLOGComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
