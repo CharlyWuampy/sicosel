@@ -18,25 +18,186 @@
 <script>
   $('#myModal').modal(options)
   $('#myModal').modal('show')
-  
+
 </script>
 
 <!-- Toolbar -->
+
+
 <div class="modal" tabindex="1" id="myModal">
+
   <div class="modal-dialog">
+
     <div class="modal-content">
+
       <div class="modal-header">
+
         <h4 class="modal-title">Ejemplo de ventana modal</h4>
+
       </div>
+
       <div class="modal-body">
+
+        <!-- Nuevos cambios -->
+
+        <form role="form">
+
+          <div class="form-group">
+
+            <label class="control-label" for="Buscar"><span class="icon-search" aria-hidden="true"></span>&nbsp;&nbsp;Buscar:</label>
+
+            <input class="form-control" id="" placeholder="Buscar" type="text">
+
+          </div>
+
+        </form>
+
+
+
         <p>Ejemplo de texto interno.</p>
+
       </div>
+
       <div class="modal-footer">
+
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary">Guardar</button>
+
+        <button type="button" class="btn btn-primary">Buscar</button>
+
       </div>
+
     </div><!-- /.modal-content -->
+
   </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->
+
+
+
+
+
+
+
+<div class="modal" tabindex="2" id="myModal2">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title">Se ha generado el folio con éxito</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+        <!-- Nuevos cambios -->
+
+
+
+        <div class="alert alert-success" role="alert"><p>MEJF84020515HMEX017</p></div>
+
+
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+        <button type="button" class="btn btn-primary" [routerLink]="['/Home']" data-dismiss="modal">Salir</button>
+
+      </div>
+
+    </div><!-- /.modal-content -->
+
+  </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->
+
+
+
+
+
+<div class="modal" tabindex="3" id="myModal3">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title">Se ha generado el folio con éxito</h4>
+
+      </div>
+
+      <div class="modal-body">
+
+        <!-- Nuevos cambios -->
+
+
+
+        <div class="alert alert-success" role="alert"><p>NIPJ840123QTHMX007</p></div>
+
+
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+        <button type="button" class="btn btn-primary" [routerLink]="['/Home']" data-dismiss="modal">Siguiente</button>
+
+      </div>
+
+    </div><!-- /.modal-content -->
+
+  </div><!-- /.modal-dialog -->
+
+</div><!-- /.modal -->
+
+
+
+
+
+<div class="modal" tabindex="4" id="myModal4">
+
+  <div class="modal-dialog">
+
+    <div class="modal-content">
+
+      <div class="modal-header">
+
+        <h4 class="modal-title">¡Se ha actualizado correctamente la información! </h4>
+
+      </div>
+
+      <div class="modal-body">
+
+        <!-- Nuevos cambios -->
+
+
+
+        <div class="alert alert-success" role="alert"><p>MEJF84020515HMEX017</p></div>
+
+
+
+      </div>
+
+      <div class="modal-footer">
+
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+
+        <button type="button" class="btn btn-primary" [routerLink]="['/Home']" data-dismiss="modal">Siguiente</button>
+
+      </div>
+
+    </div><!-- /.modal-content -->
+
+  </div><!-- /.modal-dialog -->
+
 </div><!-- /.modal -->
 
 <div class="top-buffer"></div>
