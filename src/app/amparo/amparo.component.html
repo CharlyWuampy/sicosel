@@ -61,125 +61,323 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h3><span class="icon-user" aria-hidden="true"></span>&nbsp;Amparo</h3>
+      <h3><i class="fas fa-balance-scale"></i>&nbsp;Judiricos</h3>
       <hr class="red">
-    </div>
-  </div>
-</div>
-
-
-<div class="container">
-  <div class="row small-bottom-buffer">
-    <div class="col-md-4">
-      <div class="form-group">
-        <label class="control-label">Amparo directo:<samp id="errAmparo directo" name="errAmparo directo" class="control-label"></samp> </label>
-        <select class="form-control">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-        <small id="errAmparo directo" name="errAmparo directo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="form-group">
-        <label class="control-label">Amparo indirecto*:<samp id="errpAmparo indirecto" name="errpAmparo indirecto" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
-        <select class="form-control">
-          <option>1</option>
-          <option>2</option>
-          <option>3</option>
-          <option>4</option>
-          <option>5</option>
-        </select>
-        <small id="errpAmparo indirecto" name="errpAmparo indirecto" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="form-group">
-        <label class="control-label">Partida Judírica:</label>
-        <input type="text" class="form-control smalltext" id="Partida Judírica" name="Partida Judírica" size="30" placeholder="Partida Judírica">
-      </div>
     </div>
   </div>
 </div>
 
 <div class="container">
   <div class="row">
-    <div class="col-md-8">
-      <div class="panel-group ficha-collapse">
-        <div class="panel panel-default">
-          <div class="panel-heading">
-            <h4 class="panel-title text-center">
-              <a data-parent="#accordion2" data-toggle="collapse" aria-controls="panel-02">
-                Foto
-              </a>
-            </h4>
-          </div>
-          <div class="panel-collapse collapse show">
-            <div class="panel-body">
-              --------
+    <div class="col-12">
+      <h4 style="color:rgb(188,149,92,1);"><span aria-hidden="true"></span>&nbsp;Amparo</h4>
+    </div>
+  </div>
+</div>
 
-              <div class="row">
-                <div class="col-md-12">
-                  <label class="control-label">Nombre:</label>
-                  <input type="text" class="form-control smalltext" id="Nombre" name="Nombre" size="30" placeholder="Nombre">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <div role="tabpanel">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active">
+            <a data-toggle="tab" arial-controls="tab-01" href="#tab-01" aria-expanded="true">
+              Título 1
+            </a>
+          </li>
+          <li role="presentation"><a data-toggle="tab" arial-controls="tab-02" href="#tab-02" aria-expanded="false">Título 4</a></li>
+        </ul>
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="tab-01">
+            <div class="panel-collapse collapse show">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Nombre:</label>
+                    <input type="text" class="form-control smalltext" id="Nombre" name="Nombre" size="30" placeholder="Nombre">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <label class="control-label">Proceso:</label>
-                  <input type="text" class="form-control smalltext" id="Proceso" name="Proceso" size="30" placeholder="Proceso">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Proceso:</label>
+                    <input type="text" class="form-control smalltext" id="Proceso" name="Proceso" size="30" placeholder="Proceso">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <label class="control-label">Causa:</label>
-                  <input type="text" class="form-control smalltext" id="Causa" name="Causa" size="30" placeholder="Causa">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Causa:</label>
+                    <input type="text" class="form-control smalltext" id="Causa" name="Causa" size="30" placeholder="Causa">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <label class="control-label">Entidad/Municipio:</label>
-                  <select class="form-control">
-                    <option>---- Seleciona ----</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                  </select>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="control-label">Circuito:</label>
+                    <select class="form-control">
+                      <option>---- Seleciona ----</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="control-label">Juzgado:</label>
+                    <select class="form-control">
+                      <option>---- Seleciona ----</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <label class="control-label">Asunto:</label>
-                  <input type="text" class="form-control smalltext" id="Asunto" name="Asunto" size="30" placeholder="Asunto">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Asunto:</label>
+                    <input type="text" class="form-control smalltext" id="Asunto" name="Asunto" size="30" placeholder="Asunto">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <label class="control-label">Promocion de Amparo:</label>
-                  <input type="text" class="form-control smalltext" id="Promocion de Amparo" name="Promocion de Amparo" size="30" placeholder="Promocion de Amparo">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Promocion de Amparo:</label>
+                    <input type="text" class="form-control smalltext" id="Promocion de Amparo" name="Promocion de Amparo" size="30" placeholder="Promocion de Amparo">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <label class="control-label">Resolución:</label>
-                  <input type="text" class="form-control smalltext" id="Resolución" name="Resolución" size="30" placeholder="Resolución">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Resolución:</label>
+                    <input type="text" class="form-control smalltext" id="Resolución" name="Resolución" size="30" placeholder="Resolución">
+                  </div>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-12">
-                  <label class="control-label">Negado/Cacelado:</label>
-                  <input type="text" class="form-control smalltext" id="Negado/Cacelado" name="Negado/Cacelado" size="30" placeholder="Negado/Cacelado">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="radio-01" value="opcion-01" checked="checked"> Concede &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="radio-01" value="opcion-02" checked="checked"> Niega
+                      </label>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
+
+          <div role="tabpanel" class="tab-pane" id="tab-02">
+            <div class="panel-collapse collapse show">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Nombre:</label>
+                    <input type="text" class="form-control smalltext" id="Nombre" name="Nombre" size="30" placeholder="Nombre">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Proceso:</label>
+                    <input type="text" class="form-control smalltext" id="Proceso" name="Proceso" size="30" placeholder="Proceso">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Causa:</label>
+                    <input type="text" class="form-control smalltext" id="Causa" name="Causa" size="30" placeholder="Causa">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="control-label">Circuito:</label>
+                    <select class="form-control">
+                      <option>---- Seleciona ----</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="control-label">Juzgado:</label>
+                    <select class="form-control">
+                      <option>---- Seleciona ----</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Asunto:</label>
+                    <input type="text" class="form-control smalltext" id="Asunto" name="Asunto" size="30" placeholder="Asunto">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Promocion de Amparo:</label>
+                    <input type="text" class="form-control smalltext" id="Promocion de Amparo" name="Promocion de Amparo" size="30" placeholder="Promocion de Amparo">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <label class="control-label">Resolución:</label>
+                    <input type="text" class="form-control smalltext" id="Resolución" name="Resolución" size="30" placeholder="Resolución">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="radio-01" value="opcion-01" checked="checked"> Concede &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="radio-01" value="opcion-02" checked="checked"> Niega
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            ..2.
+          </div>
+
         </div>
       </div>
     </div>
   </div>
 </div>
+
+<div class="container">
+  <div class="clearfix">
+
+    <div class="pull-right">
+
+      <button alt="Entrar" class="btn btn-primary" type="button" value="AGREGAR" id="submit1" name="submit1" onClick="return ValidaEnvioLogin();">Agregar</button>
+
+    </div>
+
+  </div>
+</div>
+
+<div class="bottom-buffer"></div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>
+                <p>AMPARO DIRECTO / INDIRECTO</p>
+              </th>
+              <th>
+                <p>NOMBRE</p>
+              </th>
+              <th>
+                <p>PROCESO</p>
+              </th>
+              <th>
+                <p>NO. AMPARO</p>
+              </th>
+              <th>
+                <p>CONSULTA</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>
+                <p>49A-GR3</p>
+              </td>
+              <td>
+                <p>En Vigilancia</p>
+              </td>
+              <td>
+                <p>22/10/2021</p>
+              </td>
+              <td>
+                <p>22/10/2021</p>
+              </td>
+              <td>
+                <p><a class="btn btn-danger btn-sm" data-toggle="tooltip modal" data-placement="top" role="button" data-toggle="modal" data-target="#myModal5"><i class="far fa-eye"></i></a></p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>
+                <p>49A-GR3</p>
+              </td>
+              <td>
+                <p>Conclución</p>
+              </td>
+              <td>
+                <p>22/10/2021</p>
+              </td>
+              <td>
+                <p>22/10/2021</p>
+              </td>
+              <td>
+                <p><a class="btn btn-danger btn-sm" type="button" data-toggle="tooltip" data-placement="top" title="Consulta"><i class="far fa-eye"></i></a></p>
+              </td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>
+                <p>49A-GR3</p>
+              </td>
+              <td>
+                <p>Envigilacia</p>
+              </td>
+              <td>
+                <p>22/10/2021</p>
+              </td>
+              <td>
+                <p>22/10/2021</p>
+              </td>
+              <td>
+                <p><a class="btn btn-danger btn-sm" type="button" data-toggle="tooltip" data-placement="top" title="Consulta"><i class="far fa-eye"></i></a></p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Anterior">
+              <span aria-hidden="true">&laquo;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" aria-label="Siguiente">
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="clearfix">
+    <a alt="Entrar" class="btn btn-primary" type="button" value="SIGUIENTE" id="submit1" name="submit1" onClick="return ValidaEnvioLogin();" [routerLink]="['/Beneficio']">REGRESAR</a>
+
+    <div class="pull-right">
+
+      <a alt="Entrar" class="btn btn-primary" type="button" value="SIGUIENTE" id="submit1" name="submit1" onClick="return ValidaEnvioLogin();" [routerLink]="['/Conclucion']">SIGUIENTE</a>
+
+    </div>
+
+  </div>
+</div>
+<div class="bottom-buffer"></div>
+
+
 

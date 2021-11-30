@@ -1,3 +1,19 @@
 .img-thumbnail, body {
   background-color: #DDC9A3 !important;
 }
+
+@media (min-width: 992px) {
+  .modal-lg {
+    width: 1194px !important;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  .modal-lg, .modal-xl {
+    max-width: 1191px !important;
+    /* margin-top: 11px; */
+    margin: 65px auto !important;
+  }
+}

@@ -64,7 +64,7 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h3><span class="icon-user" aria-hidden="true"></span>&nbsp;Judiricos</h3>
+      <h3><i class="fas fa-balance-scale"></i>&nbsp;Judiricos</h3>
       <hr class="red">
     </div>
   </div>
@@ -79,70 +79,1162 @@
   </div>
 </div>
 
+
+
 <div class="container">
   <div class="row">
-    <div class="col-6">
-      <form role="form">
-        <p>
-          <strong>Penas Cortas ( hasta 4 años 11 meses)</strong>
-        </p>
-        <div class="radio">
-          <label>
-            <input checked="" name="radio-01" type="radio" value="opcion-01"  [routerLink]="['/LibertadCondicionada']">Libertad Condicionada
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="radio-01" type="radio" value="opcion-02"  [routerLink]="['/JornadasDeTrabajo']" >Jornadas de Trabajo
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="radio-01" type="radio" value="opcion-03"  [routerLink]="['/TratamientoEnLibertad']">Tratamiento en Libertad
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="radio-01" type="radio" value="opcion-03" [routerLink]="['/TratamientosEnSemilibertad']">Tratamiento en Semilibertad
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="radio-01" type="radio" value="opcion-03" [routerLink]="['/CondenaCondenacional']">Condena Condicionada
-          </label>
-        </div>
-      
-        
-        <p>
-          <strong>Libertad anticipada</strong>
-        </p>
-        <div class="radio">
-          <label>
-            <input checked="" name="radio-01" type="radio" value="opcion-01"  [routerLink]="['/LibertadPreparatoria']">Libertad Preparatoria
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="radio-01" type="radio" value="opcion-02"  [routerLink]="['/RemisionParcialDeLaPena']">Remisión Parcial de la Pena
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="radio-01" type="radio" value="opcion-03"  [routerLink]="['/TratamientoPreLiberacional']">Tratamiento Pre-Liberacional
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="radio-01" type="radio" value="opcion-03"  [routerLink]="['/Art75Confinamiento']">Art. 75 (Confinamiento)
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input name="radio-01" type="radio" value="opcion-03" LibertadSupervisada [routerLink]="['/LibertadSupervisada']">Libertad Supervisada
-          </label>
-        </div>
-      </form>
+    <div class="col-12">
+      <h5><span aria-hidden="true"></span>&nbsp;Penas Cortas ( hasta 4 años 11 meses)</h5>
+      <hr>
     </div>
   </div>
 </div>
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion2">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion2" data-toggle="collapse" href="#panel-02" aria-expanded="true" aria-controls="panel-02">
+                Libertad Condicionada
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion2" data-toggle="collapse" href="#panel-02"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-02">
+            <div class="panel-body">
+
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="radio">
+                    <label>
+                      <input type="radio" name="radio-01" value="opcion-01" checked="checked"> Sin monitoreo elecrónico &nbsp;&nbsp;
+                    </label>
+                    <label>
+                      <input type="radio" name="radio-01" value="opcion-02" checked="checked"> Con monitoreo elecrónico &nbsp;&nbsp;
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!---fin primer colapsable-->
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion3">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion3" data-toggle="collapse" href="#panel-03" aria-expanded="true" aria-controls="panel-03">
+                Jornadas de Trabajo
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion3" data-toggle="collapse" href="#panel-03"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-03">
+            <div class="panel-body">
+
+
+
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label class="control-label">Número de Jornadas:<samp id="" name="Número de Jornadas" class="control-label"></samp> </label>
+                    <input class="form-control" placeholder="Número de Jornadas" rows="3">
+                  </div>
+                </div>
+              </div>
+              <br />
+
+
+
+              <form class="form">
+                <div class="form-group row">
+                  <label class="col-4 col-form-label" for="email-03">Lugar presencial:</label>
+                  <div class="col-4">
+                    <input class="form-control" id="email-03" placeholder="Estado/Municipio" type="text">
+                  </div>
+                  <div class="col-4">
+                    <input class="form-control" id="password-03" placeholder="Alcaldía" type="password">
+                  </div>
+                </div>
+              </form>
+
+
+
+              <div class="row">
+                <div class="col-md-6">
+                  <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                  <select class="form-control">
+                    <option>Activado</option>
+                    <option>Enviado</option>
+                    <option>Inactivo</option>
+                    <option>Finado</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---fin segundo colapsable-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion4">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion4" data-toggle="collapse" href="#panel-04" aria-expanded="true" aria-controls="panel-04">
+                Tratamiento en Libertad
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion4" data-toggle="collapse" href="#panel-04"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-04">
+            <div class="panel-body">
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!---fin tercer colapsable-->
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion5">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion2" data-toggle="collapse" href="#panel-05" aria-expanded="true" aria-controls="panel-05">
+                Tratamiento en Semilibertad
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion5" data-toggle="collapse" href="#panel-05"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-05">
+            <div class="panel-body">
+
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Tipo de tratamiento:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Farmacológico</option>
+                      <option>Psicológico</option>
+                      <option>Desintoxicación</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-8">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!---fin del colapsable-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion6">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion6" data-toggle="collapse" href="#panel-06" aria-expanded="true" aria-controls="panel-06">
+                Condena Condicionada
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion6" data-toggle="collapse" href="#panel-06"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-06">
+            <div class="panel-body">
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h5><span aria-hidden="true"></span>&nbsp;Libertad anticipada</h5>
+      <hr>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion7">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion7" data-toggle="collapse" href="#panel-07" aria-expanded="true" aria-controls="panel-07">
+                Libertad Preparatoria
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion7" data-toggle="collapse" href="#panel-07"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-07">
+            <div class="panel-body">
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!--fin del colapsable-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion8">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion8" data-toggle="collapse" href="#panel-08" aria-expanded="true" aria-controls="panel-08">
+                Remisión Parcial de la Pena
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion8" data-toggle="collapse" href="#panel-08"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-08">
+            <div class="panel-body">
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!----fin del colapsable-->
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion9">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion9" data-toggle="collapse" href="#panel-09" aria-expanded="true" aria-controls="panel-09">
+                Tratamiento Pre-Liberacional
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion9" data-toggle="collapse" href="#panel-09"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-09">
+            <div class="panel-body">
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Periodicidad:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!----fin del colapsable--->
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion10">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion10" data-toggle="collapse" href="#panel-010" aria-expanded="true" aria-controls="panel-010">
+                Art. 75 (Confinamiento)
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion10" data-toggle="collapse" href="#panel-010"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-010">
+            <div class="panel-body">
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---fin del colapsable--->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion11">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion11" data-toggle="collapse" href="#panel-011" aria-expanded="true" aria-controls="panel-011">
+                Tratamiento Pre-Liberacional
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion11" data-toggle="collapse" href="#panel-011"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-011">
+            <div class="panel-body">
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">Diagnóstico:<samp id="" name="Diagnóstico" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Diagnóstico" rows="3">
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-md-8">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Periodicidad:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label" for="file-01">Reporte de salud:</label>
+                    <input id="file-01" type="file">
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!---fin del colapsable---->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion12">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion12" data-toggle="collapse" href="#panel-012" aria-expanded="true" aria-controls="panel-012">
+                Libertad Anticipada
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion12" data-toggle="collapse" href="#panel-012"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-012">
+            <div class="panel-body">
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="panel-group ficha-collapse" id="accordion13">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-parent="#accordion13" data-toggle="collapse" href="#panel-013" aria-expanded="true" aria-controls="panel-013">
+                Libertad Supervisada
+              </a>
+            </h4>
+            <button type="button" class="collpase-button collapsed" data-parent="#accordion13" data-toggle="collapse" href="#panel-013"></button>
+          </div>
+          <div class="panel-collapse collapse" id="panel-013">
+            <div class="panel-body">
+
+
+
+              <div class="row">
+                <div class="col-md-12">
+                  <label class="control-label">Observaciónes:<samp id="" name="Observaciónes" class="control-label"></samp> </label>
+                  <textarea class="form-control" placeholder="Observaciónes" rows="3"></textarea>
+                </div>
+              </div>
+
+
+
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Estatus:<samp id="" name="Estatus" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Activado</option>
+                      <option>Enviado</option>
+                      <option>Inactivo</option>
+                      <option>Finado</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="row">
+                <div class="col-md-4">
+                  <label class="control-label">No. Presentaciones:<samp id="" name="No. Presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="No. Presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Inicio de presentaciones:<samp id="" name="Inicio de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Inicio de presentaciones" rows="3">
+                </div>
+                <div class="col-md-4">
+                  <label class="control-label">Fecha término de presentaciones:<samp id="" name="Fecha término de presentaciones" class="control-label"></samp> </label>
+                  <input type="text" class="form-control smalltext" placeholder="Fecha término de presentaciones" rows="3">
+                </div>
+              </div>
+
+              <div class="row small-bottom-buffer">
+                <div class="col-md-4">
+                  <div class="form-group">
+                    <label class="control-label">Reporte y/o presentaciones:<samp id="" name="Reporte y/o presentaciones" class="control-label"></samp> </label>
+                    <select class="form-control">
+                      <option>Semanal</option>
+                      <option>Quincenal</option>
+                      <option>Mensual</option>
+                      <option>Bimestral</option>
+                      <option>Trimestral</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="clearfix">
+    <a alt="Entrar" class="btn btn-primary" type="button" value="SIGUIENTE" id="submit1" name="submit1" onClick="return ValidaEnvioLogin();" [routerLink]="['/Actualizar']">REGRESAR</a>
+
+    <div class="pull-right">
+
+      <a alt="Entrar" class="btn btn-primary" type="button" value="SIGUIENTE" id="submit1" name="submit1" onClick="return ValidaEnvioLogin();" [routerLink]="['/Amparo']">SIGUIENTE</a>
+
+    </div>
+
+  </div>
+</div>
 <div class="bottom-buffer"></div>
+
+
+

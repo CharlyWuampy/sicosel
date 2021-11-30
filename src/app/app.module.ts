@@ -45,6 +45,7 @@ import { PsicologiaBComponent } from './psicologia-b/psicologia-b.component';
 import { CapacitacionComponent } from './capacitacion/capacitacion.component';
 import { EmpleoComponent } from './empleo/empleo.component';
 import { ConsultasComponent } from './consultas/consultas.component';
+import { NuevoProcesoComponent } from './nuevo-proceso/nuevo-proceso.component';
 
 
 const routes: Routes = [
@@ -84,6 +85,7 @@ const routes: Routes = [
   { path: 'Capacitacion', component: CapacitacionComponent },
   { path: 'Empleo', component: EmpleoComponent },
   { path: 'Consultas', component: ConsultasComponent },
+  { path: 'NuevoProeceso', component: NuevoProcesoComponent },
   { path: '', component: SICOSELLOGComponent, pathMatch: 'full' },
   { path: '**', redirectTo: '/', pathMatch: 'full' },
 ];
@@ -134,7 +136,8 @@ const routes: Routes = [
     PsicologiaBComponent,
     CapacitacionComponent,
     EmpleoComponent,
-    ConsultasComponent
+    ConsultasComponent,
+    NuevoProcesoComponent
   ],
   imports: [
     BrowserModule,
