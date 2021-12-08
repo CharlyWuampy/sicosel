@@ -21,6 +21,7 @@
   <app-root></app-root>
   <!-- JS -->
   <script src="https://framework-gb.cdn.gob.mx/gm/v4/js/gobmx.js"></script>
+  
   <script>
     function CamposFormulario(event, opcion) {
       var UsuarioEsc = document.getElementById('Username');
@@ -97,9 +98,9 @@
       window.document.frmLog.submit();
     }
 
-     //Validaciones de campo fin
+    //Validaciones de campo fin
 
-    
+
 
     $gmx(document).ready(function () {
       $('#calendarYear').datepicker({ changeYear: true });
@@ -142,6 +143,8 @@
       $("#calendarYear15").datepicker({ changeYear: true });
       $("#calendarYear16").datepicker({ changeYear: true });
       $("#calendarYear17").datepicker({ changeYear: true });
+      $("#calendarYearsentencia").datepicker({ changeYear: true });
+      $("#calendarYearfechaapartir").datepicker({ changeYear: true });
       $(".datepicker-example").datepicker();
 
       var num = 1500; //number of pixels before modifying styles
@@ -160,8 +163,68 @@
 
     function mayus(e) {
       e.value = e.value.toUpperCase();
+
+
     }
+
+    function soloLetras(e) { //solo letras
+      var key = e.keyCode || e.which,
+        tecla = String.fromCharCode(key).toUpperCase(),
+        letras = " áéíóúabcdefghijklmnñopqrstuvwxyzABCDEFGHIJKMNÑOPQRSTUVWXYZ",
+        especiales = [8, 37, 39, 46],
+        tecla_especial = false;
+
+      for (var i in especiales) {
+        if (key == especiales[i]) {
+          tecla_especial = true;
+          break;
+        }
+      }
+
+      if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+        return false;
+      }
+
+    }
+
     //Mayusculas
+
+    // validar correo
+    function validarcorreo() {
+      debugger
+      var campo = document.getElementById('email');
+      var valido = document.getElementById('MensajeError');
+
+      emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+      //Se muestra un texto a modo de ejemplo, luego va a ser un icono
+      if (emailRegex.test(campo.value)) {
+        valido.innerText = "";
+      } else {
+        valido.innerText = "incorrecto";
+      }
+    }
+
+
+    //Telefonos 2
+
+    function numeros(e) {
+      var key = e.keyCode || e.which,
+        tecla = String.fromCharCode(key).toLowerCase(),
+        letras = "1234567890",
+        especiales = [8, 37, 39, 46],
+        tecla_especial = false;
+
+      for (var i in especiales) {
+        if (key == especiales[i]) {
+          tecla_especial = true;
+          break;
+        }
+      }
+
+      if (letras.indexOf(tecla) == -1 && !tecla_especial) {
+        return false;
+      }
+    }
 
 
     //Función para validar una CURP
@@ -208,7 +271,11 @@
 
 
 
-     //Validaciones de campo fin 2
+    //Validaciones de campo fin 2
+
+    // edad
+    
+      // finn edad
 
   </script>
   <!--
@@ -220,5 +287,5 @@
     </style>
     -->
 
-  </body>
+</body>
   </html>

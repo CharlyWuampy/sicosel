@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PaginasSitiosComponent } from './paginas-sitios/paginas-sitios.component';
-import { GeneralesPaginaComponent } from './generales-pagina/generales-pagina.component';
+
 import { DemograficosComponent } from './demograficos/demograficos.component';
 import { BiometricosComponent } from './biometricos/biometricos.component';
 import { FamiliaresComponent } from './familiares/familiares.component';
@@ -46,6 +46,7 @@ import { CapacitacionComponent } from './capacitacion/capacitacion.component';
 import { EmpleoComponent } from './empleo/empleo.component';
 import { ConsultasComponent } from './consultas/consultas.component';
 import { NuevoProcesoComponent } from './nuevo-proceso/nuevo-proceso.component';
+import { GeneralesComponent } from './generales/generales.component';
 
 
 const routes: Routes = [
@@ -54,7 +55,7 @@ const routes: Routes = [
   { path: 'Oficios', component: OficiosComponent },
   { path: 'Familiares', component: FamiliaresComponent },
   { path: 'Biometricos', component: BiometricosComponent },
-  { path: 'Generales', component: GeneralesPaginaComponent },
+  { path: 'Generales', component: GeneralesComponent },
   { path: 'Actualizar', component: ActualizarComponent },
   { path: 'Beneficio', component: BeneficiosComponent },
   { path: 'Amparo', component: AmparoComponent },
@@ -96,7 +97,6 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     PaginasSitiosComponent,
-    GeneralesPaginaComponent,
     DemograficosComponent,
     BiometricosComponent,
     FamiliaresComponent,
@@ -137,7 +137,8 @@ const routes: Routes = [
     CapacitacionComponent,
     EmpleoComponent,
     ConsultasComponent,
-    NuevoProcesoComponent
+    NuevoProcesoComponent,
+    GeneralesComponent
   ],
   imports: [
     BrowserModule,
