@@ -1,0 +1,265 @@
+
+<div class="container">
+  <div class="pull-right">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="btn-group d-flex" role="group">
+          <a href="#" class="btn btn-danger" role="button"> <span class="icon-others" aria-hidden="true"></span>&nbsp; Modificar</a>
+          <a href="#" class="btn btn-danger" role="button" data-toggle="modal" data-target="#myModal"><span class="icon-search" aria-hidden="true"></span>&nbsp; Buscar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fin iconos modificar imprimir -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a routerLink="/Home"><i class="icon icon-home"></i></a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a routerLink="/Generales">Generales</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<!-- Posicionamiento -->
+
+
+<form  id="" name="">
+  <br />
+  <div class="row" id="rowError" style="display:none">
+    <div class="col-md-12">
+      <div id="lblMensaje" class="alert alert-danger"><strong>¡Atención!</strong> Es necesario capturar los campos obligatorios.</div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3><img src="assets/Imagenes/portada.svg" /> &nbsp;Generales
+        </h3>
+        <hr class="red">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="pull-right">
+      <div class="row">
+        <div class="col-md-12 right">
+          <div class="form-group">
+            <label class="control-label" for="">Folio:<samp id="" name="" class="control-label"></samp> </label>
+            <input type="text" class="form-control smalltext" id="" name="" size="30" placeholder="Folio" value="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="control-label">Nombre*:<samp id="errUsernameAs" name="errUsernameAs" class="control-label"></samp> </label>
+          <input type="text" class="form-control smalltext" id="Username" name="Username" size="50" placeholder="Nombre(s)" onKeyPress="return CamposFormulario(event, 1);" value="" onkeypress="return soloLetras(event)" onkeyup="javascript:this.value=this.value.toUpperCase();">
+          <small id="errUsername" name="errUsername" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Apellido Paterno:</label>
+          <input type="text" class="form-control smalltext" id="pApellido" name="pApellido" size="50" placeholder="Primer apellido" onkeypress="return soloLetras(event)" onkeyup="javascript:this.value=this.value.toUpperCase();">
+
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Apellido Materno:</label>
+          <input type="text" class="form-control smalltext" id="sApellido" name="sApellido" size="30" placeholder="Segundo apellido" onkeypress="return soloLetras(event)" onkeyup="javascript:this.value=this.value.toUpperCase();">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Nacionalidad:*<samp id="errpApellidoAs" name="errUsernameAs" class="control-label"></samp> </label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <small id="errUsername" name="errpApellido" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Estado/Provincia de nacimiento:*<samp id="" name="Estado/Provincia de nacimiento" class="control-label"></samp> </label>
+          <input type="text" class="form-control smalltext" id="" name="Estado/Provincia de nacimiento" size="30" placeholder="Estado/Provincia de nacimiento" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+          <small id="" name="Estado/Provincia de nacimiento" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Curp/Pass/Otro:*<samp id="" name="CURP" class="control-label"></samp> </label>
+          <input type="text" class="form-control smalltext" name="CURP" size="30" placeholder="CURP" onKeyPress="return CamposFormulario(event, 4);" onkeyup="mayus(this);" id="curp_input" oninput="validarInput(this)">
+          <pre id="resultado"></pre>
+          <small id="" name="Curp" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Estado Civil:*<samp id="" name="Estado Civil" class="control-label"></samp></label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <small id="" name="EstadoCivil" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Alias:</label>
+          <input type="text" class="form-control smalltext" id="" name="Alias" size="50" placeholder="Alias" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Otros Nombres:</label>
+          <input type="text" class="form-control smalltext" id="" name="Otros Nombres" size="50" placeholder="Otros Nombres" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group datepicker-group">
+          <label class="control-label" for="calendar">Fecha Nacimento*:</label>
+          <input class="form-control" id="calendar" type="text" placeholder="dd/mm/aaaa" maxlength="10" >
+          <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Ocupación:</label>
+          <select class="form-control">
+            <option>--Elige una Opción--</option>
+            <option>--------</option>
+            <option>----------</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Sexo:*<samp id="" name="Sexo" class="control-label"></samp> </label>
+          <select class="form-control">
+            <option>--Elige una Opción--</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+          </select>
+          <small id="" name="Sexo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Edad:</label>
+          <input type="text" class="form-control smalltext" id="" name="Edad" size="3" placeholder="Edad" disabled>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Etnia: </label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Escolaridad:<samp id="" name="Escolaridad" class="control-label"></samp> </label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Teléfono Casa:<samp id="" name="Teléfono Casa" class="control-label"></samp> </label>
+          <input type="text" class="form-control smalltext" id="" maxlength="10" name="Teléfono Casa" size="10" placeholder="Teléfono Casa"  onkeypress="return numeros(event)">
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Teléfono Móvil:*<samp id="" name="Teléfono Móvil" class="control-label"></samp> </label>
+          <input type="text" class="form-control smalltext" id="" maxlength="10" name="Teléfono Móvil" size="10" placeholder="Teléfono Móvil" onKeyPress="return CamposFormulario(event, 5);" onkeypress="return numeros(event)">
+          <small id="" name="Teléfono Móvil" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label" for="exampleInputEmail2">Correo Electronico*:</label>
+          <input type="email" class="form-control" placeholder="Correo Electronico" id="email" onblur="validarcorreo()">
+          <small name="Correo Electronico" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+          <div class="form-text MensajeErrorPass" id="MensajeError" runat="server" style="color: #D0021B"></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  
+
+
+  <div class="container">
+    <div class="clearfix">
+
+      <div class="pull-left text-muted text-vertical-align-button">* Campos obligatorios</div>
+      <div class="pull-right">
+
+        <button alt="Entrar" class="btn btn-primary" type="button" value="SIGUIENTE" id="submit1" name="submit1" Click="">SIGUIENTE <i class="fas fa-angle-double-right"></i></button>
+
+      </div>
+
+    </div>
+  </div>
+</form>
+<div class="bottom-buffer"></div>
+
+

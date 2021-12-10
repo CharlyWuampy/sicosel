@@ -1,0 +1,63 @@
+<div class="top-buffer"></div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-9" style="left: 83px;">
+  <div class="panel-group ficha-collapse">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title text-center">
+          <a data-parent="#accordion2" data-toggle="collapse" aria-controls="panel-02">
+           Servicio Integral para el Control de Sentenciados en Libertad SICOSEL 2.0
+          </a>
+        </h4>
+      </div>
+      <div class="panel-collapse collapse show">
+        <div class="panel-body">
+
+          <div><h4 style="color:rgb(35,91,78,1);"><strong><img src="assets/Imagenes/logimg.svg" />SICOSEL 2.0</strong> </h4>
+          </div>
+          
+
+          <div class="row">
+            <div class="col-md-12">
+              <form class="form">
+                <div class="form-group row">
+                  <label class="col-3 col-form-label" for="email-03"> <i class="fas fa-user"></i> &nbsp;&nbsp; Usuario: <samp id="errUsernameAs" name="errUsernameAs" class="control-label"></samp></label>
+                  <div class="col-9">
+                    <input class="form-control" placeholder="Usuario" type="text" id="Usernamelog" name="Username" onKeyPress="return CamposFormulario(event, 1);">
+                    <small id="errUsername" name="errUsernamelog" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="col-3 col-form-label" for="password-03"> <i class="fas fa-key"></i> &nbsp;&nbsp;Contraseña: <samp id="errpContrasenaAs" name="errpContrasenaAs" class="control-label"></samp></label>
+                  <div class="col-9">
+                    <input class="form-control" placeholder="Contraseña" type="password" id="contrasena" name="pContraena" onKeyPress="return CamposFormulario(event, 2);">
+                    <small id="errpcontrasena" name="errpcontrasena" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+                  </div>
+                </div>
+
+
+                <div class="form-group row">
+                    <div class="col-sm-offset-3 col-sm-9">
+                      <a alt="Entrar" class="btn btn-primary pull-right" value="SIGUIENTE" id="submit1" name="submit1" onClick="return ValidaEnvioLogin2();"  routerLink="/Home"><i class="fas fa-sign-out-alt"></i>Ingresar</a>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
+
+
+
+        </div>
+          </div>
+        </div>
+  </div>
+ </div>
+</div>
+</div>
+
+
+
+<div class="bottom-buffer"></div>

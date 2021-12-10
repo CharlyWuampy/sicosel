@@ -1,0 +1,111 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h3><i class="fas fa-balance-scale"></i>&nbsp;Judiricos</h3>
+      <hr class="red">
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h4 style="color:rgb(188,149,92,1);">&nbsp;Conclusión</h4>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row small-bottom-buffer">
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="control-label">Año:<samp id="Año" name="Año" class="control-label"></samp> </label>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <small id="Año" name="Año" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">Mes*:<samp id="Mes" name="Mes" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <small id="Mes" name="Mes" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="form-group">
+        <label class="control-label">Día:<samp id="Día" name="Día" class="control-label"></samp> </label>
+        <select class="form-control">
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
+          <option>5</option>
+        </select>
+        <small id="Día" name="Día" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row small-bottom-buffer">
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">No. Oficio:<samp id="" name="No. Oficio" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+        <input type="text" class="form-control smalltext" id="" name="No. Oficio" size="30" placeholder="No. Oficio" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+        <small id="" name="No. Oficio" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <label class="control-label">Juzgado*:<samp id="" name="Juzgado" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+        <input type="text" class="form-control smalltext" id="" name="Juzgado" size="30" placeholder="Juzgado" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+        <small id="" name="Juzgado" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md,6">
+      <form role="form">
+        <div class="form-group">
+          <label class="control-label" for="file-01">Subir documento:</label>
+          <input id="file-01" type="file">
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container">
+  <div class="clearfix">
+    <a alt="Entrar" class="btn btn-primary" type="button" value="SIGUIENTE" id="submit1" name="submit1" onClick="return ValidaEnvioLogin();" routerLink="/Amparo">REGRESAR</a>
+
+    <div class="pull-right">
+
+      <a alt="Entrar" class="btn btn-primary" type="button" value="SIGUIENTE" id="submit1" name="submit1" onClick="return ValidaEnvioLogin();" routerLink="/Extiencion">SIGUIENTE</a>
+
+    </div>
+
+  </div>
+</div>
+<div class="bottom-buffer"></div>
+
