@@ -1,0 +1,354 @@
+<!-- Menu -->
+<nav class="navbar navbar-expand-md navbar-dark bg-light sub-navbar navbar-fixed-top">
+  <div class="container">
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#subNavBarDropdown" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand sub-navbar" [routerLink]="['/user/bob']">prevencion y <br />readaptacion social</a>
+
+    <div class="collapse navbar-collapse" id="subNavBarDropdown">
+      <ul class="navbar-nav">
+
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Generales']">Generales</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" routerLink="/Demografico">Demograficos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Biometricos']">Biometricos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Familiares']">Familiares</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Judiricos']">Judiricos</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link subnav-link" [routerLink]="['/Oficios']">Oficios</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a href="#" class="nav-link subnav-link" role="button" data-toggle="modal" data-target="#myModal4">Salir</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Fin del Menu -->
+<div class="container">
+  <div class="pull-right">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="btn-group d-flex" role="group">
+          <a href="#" class="btn btn-danger" role="button"> <span class="icon-others" aria-hidden="true"></span>&nbsp; Modificar</a>
+          <a href="#" class="btn btn-danger" role="button" data-toggle="modal" data-target="#myModal"><span class="icon-search" aria-hidden="true"></span>&nbsp; Buscar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Fin iconos modificar imprimir -->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a [routerLink]="['/Home']"><i class="icon icon-home"></i></a></li>
+        <li class="breadcrumb-item active" aria-current="page"><a [routerLink]="['/Generales']">Generales</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+<!-- Posicionamiento -->
+
+
+<form METHOD="POST" id="frmLog" name="frmLog">
+  <br />
+  <div class="row" id="rowError" style="display:none">
+    <div class="col-md-12">
+      <div id="lblMensaje" class="alert alert-danger"><strong>¡Atención!</strong> Es necesario capturar los campos obligatorios.</div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h3><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+     viewBox="0 0 152.1 182.1" style="enable-background:new 0 0 152.1 182.1;" xml:space="preserve" width="80px" height="80x">
+<g>
+<path class="st0" d="M87.8,86.2c-1.7,0-3.1-1.4-3.1-3.1V67.8c0-3-2.5-5.5-5.5-5.5H53.1c-3,0-5.5,2.5-5.5,5.5v15.2
+		c0,1.7-1.4,3.1-3.1,3.1c-1.7,0-3.1-1.4-3.1-3.1V67.8c0-6.5,5.3-11.8,11.7-11.8h26.1c6.5,0,11.8,5.3,11.8,11.8v15.2
+		C91,84.8,89.6,86.2,87.8,86.2z" />
+<path class="st0" d="M119.5,176.9c-16.1,0-29.2-13.1-29.2-29.2s13.1-29.2,29.2-29.2s29.2,13.1,29.2,29.2S135.6,176.9,119.5,176.9z
+		 M119.5,124.7c-12.7,0-23,10.3-23,23s10.3,23,23,23s23-10.3,23-23S132.2,124.7,119.5,124.7z" />
+<path class="st0" d="M108.6,175H16c-4.9,0-9-4-9-9V27.1c0-4.9,4-9,9-9h99.9c4.9,0,9,4,9,9v94.4h-6.3V27.1c0-1.5-1.2-2.7-2.7-2.7H16
+		c-1.5,0-2.7,1.2-2.7,2.7V166c0,1.5,1.2,2.7,2.7,2.7h92.7V175z" />
+<path class="st0" d="M66.2,52.8c-7,0-12.8-5.7-12.8-12.8s5.7-12.8,12.8-12.8c7,0,12.8,5.7,12.8,12.8S73.2,52.8,66.2,52.8z
+		 M66.2,33.6c-3.6,0-6.5,2.9-6.5,6.5c0,3.6,2.9,6.5,6.5,6.5c3.6,0,6.5-2.9,6.5-6.5C72.7,36.5,69.8,33.6,66.2,33.6z" />
+<path class="st0" d="M57.2,86.7c-1.7,0-3.1-1.4-3.1-3.1v-9.3c0-1.7,1.4-3.1,3.1-3.1c1.7,0,3.1,1.4,3.1,3.1v9.3
+		C60.4,85.3,59,86.7,57.2,86.7z" />
+<path class="st0" d="M74.7,86.7c-1.7,0-3.1-1.4-3.1-3.1v-9.3c0-1.7,1.4-3.1,3.1-3.1s3.1,1.4,3.1,3.1v9.3
+		C77.8,85.3,76.4,86.7,74.7,86.7z" />
+<path class="st0" d="M104.8,94.8H27.3c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1h77.5c1.7,0,3.1,1.4,3.1,3.1
+		C107.9,93.4,106.5,94.8,104.8,94.8z" />
+<path class="st0" d="M104.8,110.2H27.3c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1h77.5c1.7,0,3.1,1.4,3.1,3.1
+		C107.9,108.8,106.5,110.2,104.8,110.2z" />
+<path class="st0" d="M104.8,124.7H27.3c-1.7,0-3.1-1.4-3.1-3.1c0-1.7,1.4-3.1,3.1-3.1h77.5c1.7,0,3.1,1.4,3.1,3.1
+		C107.9,123.3,106.5,124.7,104.8,124.7z" />
+<path class="st0" d="M94.5,140.7H27.3c-1.7,0-3.1-1.4-3.1-3.1s1.4-3.1,3.1-3.1h67.2c1.7,0,3.1,1.4,3.1,3.1S96.2,140.7,94.5,140.7z" />
+<path class="st0" d="M93,156.3H27.3c-1.7,0-3.1-1.4-3.1-3.1s1.4-3.1,3.1-3.1H93c1.7,0,3.1,1.4,3.1,3.1S94.7,156.3,93,156.3z" />
+<path class="st0" d="M115.4,161.9L115.4,161.9c-1,0-1.9-0.5-2.5-1.3l-7.4-10.1c-1-1.4-0.7-3.4,0.7-4.4c1.4-1,3.4-0.7,4.4,0.7
+		l4.9,6.6l13.5-18.3c1-1.4,3-1.7,4.4-0.7c1.4,1,1.7,3,0.7,4.4l-16,21.7C117.3,161.5,116.4,161.9,115.4,161.9z" />
+<path class="st0" d="M136.6,125.1h-6.3V15c0-1.5-1.2-2.7-2.7-2.7H27.8c-1.5,0-2.7,1.2-2.7,2.7v7.2h-6.3V15c0-4.9,4-9,9-9h99.9
+		c4.9,0,9,4,9,9V125.1z" />
+</g>
+</svg>&nbsp;Generales</h3>
+        <hr class="red">
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="pull-right">
+      <div class="row">
+        <div class="col-md-12 right">
+          <div class="form-group">
+            <label class="control-label" for="validationCustom03">Folio*:<samp id="errpFolioAs" name="errpFolioAs" class="control-label"></samp> </label>
+            <input type="text" class="form-control smalltext" id="pFolio" name="pFolio" size="30" placeholder="Nombre(s)" onKeyPress="return CamposFormulario(event, 3);" value="">
+            <small id="errFolio" name="errFolio" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-md-4">
+        <div class="form-group">
+          <label class="control-label">Nombre*:<samp id="errUsernameAs" name="errUsernameAs" class="control-label"></samp> </label>
+          <input type="text" class="form-control smalltext" id="Username" name="Username" size="30" placeholder="Nombre(s)" onKeyPress="return CamposFormulario(event, 1);" value="" onkeyup="mayus(this);">
+          <small id="errUsername" name="errUsername" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Apellido Paterno:<samp id="errpApellidoAs" name="errpApellidoAs" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="pApellido" name="pApellido" size="30" placeholder="Primer apellido" onKeyPress="return CamposFormulario(event, 2);" onkeyup="mayus(this);">
+          <small id="errpApellido" name="errpApellido" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Apellido Materno:</label>
+          <input type="text" class="form-control smalltext" id="sApellido" name="sApellido" size="30" placeholder="Segundo apellido" onkeyup="mayus(this);">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Nacionalidad*:<samp id="errUsernameAs" name="errUsernameAs" class="control-label"></samp> </label>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <small id="errUsername" name="errUsername" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Estado/Provincia de nacimiento*:<samp id="" name="Estado/Provincia de nacimiento" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="" name="Estado/Provincia de nacimiento" size="30" placeholder="Estado/Provincia de nacimiento" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+          <small id="" name="Estado/Provincia de nacimiento" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Curp/Pass/Otro*:<samp id="" name="CURP" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" name="CURP" size="30" placeholder="CURP" onKeyPress="return CamposFormulario(event, 4);" onkeyup="mayus(this);" id="curp_input" oninput="validarInput(this)">
+          <pre id="resultado"></pre>
+          <small id="" name="Curp" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Estado Civil*:<samp id="" name="CURP" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <small id="" name="errpApellido" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Alias*:<samp id="" name="Alias" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="" name="Alias" size="30" placeholder="Alias" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+          <small id="" name="Alias" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Otros Nombres*:<samp id="" name="Otros Nombres" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="" name="Otros Nombres" size="30" placeholder="Otros Nombres" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+          <small id="" name="Otros Nombres" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!------>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Fecha Nacimento*:<samp id="" name="Fecha Nacimento" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="" name="Fecha Nacimento" size="30" placeholder="Fecha Nacimento" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+          <small id="" name="Fecha Nacimento" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Ocupación*:<samp id="" name="Ocupación" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <select class="form-control">
+            <option>--Elige una Opción--</option>
+            <option>--------</option>
+            <option>----------</option>
+          </select>
+          <small id="" name="Ocupación" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Sexo*:<samp id="" name="Sexo" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <select class="form-control">
+            <option>--Elige una Opción--</option>
+            <option>Masculino</option>
+            <option>Femenino</option>
+          </select>
+          <small id="" name="Sexo" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Edad*:<samp id="" name="Edad" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="" name="Edad" size="30" placeholder="Fecha Nacimento" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+          <small id="" name="Edad" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+       <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Etnia*:<samp id="" name="Etnia" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <small id="" name="Etnia" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Escolaridad*:<samp id="" name="Escolaridad" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <select class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+          <small id="" name="Escolaridad" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row small-bottom-buffer">
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Teléfono Casa:<samp id="" name="Teléfono Casa" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="" name="Teléfono Casa" size="30" placeholder="Teléfono Casa" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+          <small id="" name="Teléfono Casa" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Teléfono Móvil*:<samp id="" name="Teléfono Móvil" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="" name="Teléfono Móvil" size="30" placeholder="Teléfono Móvil" onKeyPress="return CamposFormulario(event, 5);" onkeyup="mayus(this);">
+          <small id="" name="Teléfono Móvil" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label class="control-label">Correo Electronico*:<samp id="" name="Correo Electronico" class="control-label"></samp> </label> <span class="glyphicon glyphicon-question-sign" aria-hidden="true" data-toggle="tooltip" data-placement="right" title="Ejemplo tooltip"></span>
+          <input type="text" class="form-control smalltext" id="" name="Correo Electronico" size="30" placeholder="Correo Electronico" onKeyPress="return CamposFormulario(event, 5);">
+          <small id="" name="Correo Electronico" class="form-text form-text-error" style="display:none">Este campo es obligatorio</small>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <div class="container">
+    <div class="clearfix">
+
+      <div class="pull-left text-muted text-vertical-align-button">* Campos obligatorios</div>
+      <div class="pull-right">
+
+        <a alt="Entrar" class="btn btn-primary" type="button" value="SIGUIENTE" id="submit1" name="submit1" onClick="return ValidaEnvioLogin();">SIGUIENTE</a>
+
+      </div>
+
+    </div>
+  </div>
+</form>
+<div class="bottom-buffer"></div>
+
+
+
+
+<div class="content" role="main">
+
+
+  <!-- Highlight Card -->
+  <!-- Resources -->
+  <!-- Next Steps -->
+  <!-- Terminal -->
+  <!-- Links -->
+  <!-- Footer -->
+  <footer>
+  </footer>
+
+
+
+</div>
+
+

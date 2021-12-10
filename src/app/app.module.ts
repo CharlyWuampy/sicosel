@@ -1,52 +1,53 @@
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { PaginasSitiosComponent } from './paginas-sitios/paginas-sitios.component';
+import { PaginasSitiosComponent } from './paginas/paginas-sitios/paginas-sitios.component';
 
-import { DemograficosComponent } from './demograficos/demograficos.component';
-import { BiometricosComponent } from './biometricos/biometricos.component';
-import { FamiliaresComponent } from './familiares/familiares.component';
-import { JudiricosComponent } from './judiricos/judiricos.component';
-import { BeneficiosComponent } from './beneficios/beneficios.component';
-import { OficiosComponent } from './oficios/oficios.component';
-import { ApoyoComponent } from './apoyo/apoyo.component';
-import { ActualizarComponent } from './actualizar/actualizar.component';
-import { AmparoComponent } from './amparo/amparo.component';
-import { ConclucionComponent } from './conclucion/conclucion.component';
-import { ExtincionComponent } from './extincion/extincion.component';
-import { SICOSELLOGComponent } from './sicosellog/sicosellog.component';
-import { HomeComponent } from './home/home.component';
-import { LogSerpostalesComponent } from './log-serpostales/log-serpostales.component';
-import { AsesoriajudiricaComponent } from './asesoriajudirica/asesoriajudirica.component';
-import { DerivacionepostalesComponent } from './derivacionepostales/derivacionepostales.component';
-import { DonativosotorgadosComponent } from './donativosotorgados/donativosotorgados.component';
-import { PsicologiaComponent } from './psicologia/psicologia.component';
-import { VinculacionpenitensarioestatalComponent } from './vinculacionpenitensarioestatal/vinculacionpenitensarioestatal.component';
-import { ServiciosPostalesLOGComponent } from './servicios-postales-log/servicios-postales-log.component';
-import { ServiciosPostalesComponent } from './servicios-postales/servicios-postales.component';
-import { TrabajoSocialComponent } from './trabajo-social/trabajo-social.component';
-import { LibertadCondicionadaComponent } from './libertad-condicionada/libertad-condicionada.component';
-import { JornadasDeTrabajoComponent } from './jornadas-de-trabajo/jornadas-de-trabajo.component';
-import { TratamientoEnLibertadComponent } from './tratamiento-en-libertad/tratamiento-en-libertad.component';
-import { TratamientosEnSemilibertadComponent } from './tratamientos-en-semilibertad/tratamientos-en-semilibertad.component';
-import { CondenaCondenacionalComponent } from './condena-condenacional/condena-condenacional.component';
-import { LibertadPreparatoriaComponent } from './libertad-preparatoria/libertad-preparatoria.component';
-import { RemisionParcialDeLaPenaComponent } from './remision-parcial-de-la-pena/remision-parcial-de-la-pena.component';
-import { TratamientoPreLiberacionalComponent } from './tratamiento-pre-liberacional/tratamiento-pre-liberacional.component';
-import { Art75ConfinamientoComponent } from './art75-confinamiento/art75-confinamiento.component';
-import { LibertadSupervisadaComponent } from './libertad-supervisada/libertad-supervisada.component';
-import { ServiciospostpenalesBComponent } from './serviciospostpenales-b/serviciospostpenales-b.component';
-import { TrabajosocialBComponent } from './trabajosocial-b/trabajosocial-b.component';
-import { DerivacionesPostpenalesComponent } from './derivaciones-postpenales/derivaciones-postpenales.component';
-import { DonativosOtorgadosComponent } from './donativos-otorgados/donativos-otorgados.component';
-import { PsicologiaBComponent } from './psicologia-b/psicologia-b.component';
-import { CapacitacionComponent } from './capacitacion/capacitacion.component';
-import { EmpleoComponent } from './empleo/empleo.component';
-import { ConsultasComponent } from './consultas/consultas.component';
-import { NuevoProcesoComponent } from './nuevo-proceso/nuevo-proceso.component';
-import { GeneralesComponent } from './generales/generales.component';
+import { DemograficosComponent } from './paginas/demograficos/demograficos.component';
+import { BiometricosComponent } from './paginas/biometricos/biometricos.component';
+import { FamiliaresComponent } from './paginas/familiares/familiares.component';
+import { JudiricosComponent } from './paginas/judiricos/judiricos.component';
+import { BeneficiosComponent } from './paginas/beneficios/beneficios.component';
+import { OficiosComponent } from './paginas/oficios/oficios.component';
+import { ApoyoComponent } from './paginas/apoyo/apoyo.component';
+import { ActualizarComponent } from './paginas/actualizar/actualizar.component';
+import { AmparoComponent } from './paginas/amparo/amparo.component';
+import { ConclucionComponent } from './paginas/conclucion/conclucion.component';
+import { ExtincionComponent } from './paginas/extincion/extincion.component';
+import { SICOSELLOGComponent } from './paginas/sicosellog/sicosellog.component';
+import { HomeComponent } from './paginas/home/home.component';
+import { LogSerpostalesComponent } from './paginas/log-serpostales/log-serpostales.component';
+import { AsesoriajudiricaComponent } from './paginas/asesoriajudirica/asesoriajudirica.component';
+import { DerivacionepostalesComponent } from './paginas/derivacionepostales/derivacionepostales.component';
+import { DonativosotorgadosComponent } from './paginas/donativosotorgados/donativosotorgados.component';
+import { PsicologiaComponent } from './paginas/psicologia/psicologia.component';
+import { VinculacionpenitensarioestatalComponent } from './paginas/vinculacionpenitensarioestatal/vinculacionpenitensarioestatal.component';
+import { ServiciosPostalesLOGComponent } from './paginas/servicios-postales-log/servicios-postales-log.component';
+import { ServiciosPostalesComponent } from './paginas/servicios-postales/servicios-postales.component';
+import { TrabajoSocialComponent } from './paginas/trabajo-social/trabajo-social.component';
+import { LibertadCondicionadaComponent } from './paginas/libertad-condicionada/libertad-condicionada.component';
+import { JornadasDeTrabajoComponent } from './paginas/jornadas-de-trabajo/jornadas-de-trabajo.component';
+import { TratamientoEnLibertadComponent } from './paginas/tratamiento-en-libertad/tratamiento-en-libertad.component';
+import { TratamientosEnSemilibertadComponent } from './paginas/tratamientos-en-semilibertad/tratamientos-en-semilibertad.component';
+import { CondenaCondenacionalComponent } from './paginas/condena-condenacional/condena-condenacional.component';
+import { LibertadPreparatoriaComponent } from './paginas/libertad-preparatoria/libertad-preparatoria.component';
+import { RemisionParcialDeLaPenaComponent } from './paginas/remision-parcial-de-la-pena/remision-parcial-de-la-pena.component';
+import { TratamientoPreLiberacionalComponent } from './paginas/tratamiento-pre-liberacional/tratamiento-pre-liberacional.component';
+import { Art75ConfinamientoComponent } from './paginas/art75-confinamiento/art75-confinamiento.component';
+import { LibertadSupervisadaComponent } from './paginas/libertad-supervisada/libertad-supervisada.component';
+import { ServiciospostpenalesBComponent } from './paginas/serviciospostpenales-b/serviciospostpenales-b.component';
+import { TrabajosocialBComponent } from './paginas/trabajosocial-b/trabajosocial-b.component';
+import { DerivacionesPostpenalesComponent } from './paginas/derivaciones-postpenales/derivaciones-postpenales.component';
+import { DonativosOtorgadosComponent } from './paginas/donativos-otorgados/donativos-otorgados.component';
+import { PsicologiaBComponent } from './paginas/psicologia-b/psicologia-b.component';
+import { CapacitacionComponent } from './paginas/capacitacion/capacitacion.component';
+import { EmpleoComponent } from './paginas/empleo/empleo.component';
+import { ConsultasComponent } from './paginas/consultas/consultas.component';
+import { NuevoProcesoComponent } from './paginas/nuevo-proceso/nuevo-proceso.component';
+import { GeneralesComponent } from './paginas/generales/generales.component';
 
 
 const routes: Routes = [
@@ -96,6 +97,7 @@ const routes: Routes = [
 @NgModule({
   declarations: [
     AppComponent,
+    HttpClientModule,
     PaginasSitiosComponent,
     DemograficosComponent,
     BiometricosComponent,

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 155.9 184.9" style="enable-background:new 0 0 155.9 184.9;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;stroke:#BE955B;stroke-width:1.6568;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#BE955B;stroke-width:3.0871;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#BE955B;stroke-width:3.0871;stroke-miterlimit:10;}
+	.st3{font-family:'Montserrat-Regular';}
+	.st4{font-size:12px;}
+	.st5{font-size:14px;}
+</style>
+<g>
+	<path class="st0" d="M124.4,142.8H30.3c-10.7,0-19.4-8.7-19.4-19.4V25.6c0-10.7,8.7-19.4,19.4-19.4h94.1c10.7,0,19.4,8.7,19.4,19.4
+		v97.8C143.8,134.1,135.1,142.8,124.4,142.8z"/>
+	<g>
+		<path class="st1" d="M63.4,70.9v-7.5c0-2.3,1.9-4.2,4.2-4.2h12.8c2.3,0,4.2,1.9,4.2,4.2v7.5"/>
+		<circle class="st1" cx="100.2" cy="102.6" r="12.8"/>
+		<path class="st2" d="M94.9,114.5H49.4c-1.6,0-2.9-1.3-2.9-2.9V43.4c0-1.6,1.3-2.9,2.9-2.9h49.1c1.6,0,2.9,1.3,2.9,2.9v46.4"/>
+		<circle class="st1" cx="74.1" cy="49.7" r="4.7"/>
+		<line class="st1" x1="69.6" y1="66.5" x2="69.6" y2="71.1"/>
+		<line class="st1" x1="78.2" y1="66.5" x2="78.2" y2="71.1"/>
+		<line class="st1" x1="54.9" y1="75.1" x2="93" y2="75.1"/>
+		<line class="st1" x1="54.9" y1="82.6" x2="93" y2="82.6"/>
+		<line class="st1" x1="54.9" y1="89.8" x2="93" y2="89.8"/>
+		<line class="st1" x1="54.9" y1="97.6" x2="87.9" y2="97.6"/>
+		<line class="st1" x1="54.9" y1="105.3" x2="87.2" y2="105.3"/>
+		<polyline class="st1" points="94.6,103.1 98.2,108.1 106.1,97.4 		"/>
+		<path class="st2" d="M107.1,91.5V37.4c0-1.6-1.3-2.9-2.9-2.9H55.2c-1.6,0-2.9,1.3-2.9,2.9V41"/>
+	</g>
+	<text transform="matrix(1 0 0 1 3.655 163.7283)"><tspan x="0" y="0" class="st3 st4">ALTA DE SENTENCIADOS</tspan><tspan x="27.3" y="16.8" class="st3 st5">EN LIBERTAD</tspan></text>
+</g>
+</svg>
